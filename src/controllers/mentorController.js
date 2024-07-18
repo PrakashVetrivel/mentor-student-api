@@ -17,7 +17,7 @@ exports.assignStudentsToMentor = async (req, res) => {
 
     // Find the mentor
     const mentor = await Mentor.findById(mentorId);
-    if (!mentor) return res.status(404).json({ error: 'Mentor not found' });
+    if (!mentor) return res.status(404).json({ error: 'Mentor not Found' });
 
     // Add students to the mentor
     mentor.students = [...mentor.students, ...studentIds];
