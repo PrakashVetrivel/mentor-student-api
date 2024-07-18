@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb://localhost:27017/mentor-student')
   .then(() =>{ console.log('MongoDB connected');
 })
-  .catch((err) =>{ console.log('MongoDB Connection error:',err);
+  .catch((err) =>{ console.log('MongoDB Connection is error:',err);
 });
 
 // Routes
